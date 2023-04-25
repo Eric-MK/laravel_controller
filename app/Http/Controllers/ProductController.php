@@ -6,7 +6,10 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-    //
+    public function index()
+    {
+        return view('products.index');//return view folder products with file name index
+    }
 }
 
 /* Here, we have defined a ProductController class in the App\Http\Controllers namespace.
