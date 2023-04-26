@@ -11,9 +11,15 @@ class ProductController extends Controller
 
         $title = 'Welcome to laravel';
         $description = 'Created by Eric';
+        $data = [
+            'productOne' => 'iphone',
+            'productTwo' => 'Samsung',
 
-        return view('products.index', compact('title','description'));
-        //using compact method
+        ];
+       /*  return view('products.index', compact('title','description'));
+        //using compact method  */
+
+       return view('products.index',compact('title','description', 'data'));
     }
 
     public function about()
