@@ -8,7 +8,12 @@ class ProductController extends Controller
 {
     public function index()
     {
-        return view('products.index');//return view folder products with file name index
+
+        $title = 'Welcome to laravel';
+        $description = 'Created by Eric';
+
+        return view('products.index', compact('title','description'));
+        //using compact method
     }
 
     public function about()

@@ -8,5 +8,7 @@
 </head>
 <body>
     <h1>Products</h1>
+    <h3>{{ $title }}</h3>
+    <h4>{{ $description }}</h4>
 </body>
 </html>
