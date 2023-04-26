@@ -10,6 +10,11 @@ class ProductController extends Controller
     {
         return view('products.index');//return view folder products with file name index
     }
+
+    public function about()
+    {
+        return '<h1>About Us Page</h1>';
+    }
 }
 
 /* Here, we have defined a ProductController class in the App\Http\Controllers namespace.

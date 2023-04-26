@@ -18,3 +18,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/product', [ProductController::class, 'index']);//when the url is passed it calls the product controller parses the function index in the class
 
+Route::get('/product/about', [ProductController::class, 'about']);
